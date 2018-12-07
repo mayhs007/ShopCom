@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ShopCom</title>
+    <!-- Compiled and minified CSS -->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/Fonts.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/materialize.min.js"></script>
+
+    <body>
+        <div class="nav-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Logo</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <%= link_to "Login", :action=>"login" %>
+                        </li>
+                        <li>
+                            <%= link_to "Signup", :action=>"signup" %>
+
+                        </li>
+                        <li>
+                            <%= link_to "Admin Signup", :action=>"adminsignup" %>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <%= yield %>
+    </body>
+
+</html>

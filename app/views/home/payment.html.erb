@@ -1,0 +1,25 @@
+<table class="highlight">
+    <thead>
+        <tr>
+            <th>Serial No</th>
+            <th>Item Name</th>
+            <th>Item Price</th>
+            <th>Item Qty </th>
+            <th>Item Amt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <% for i in @item %>
+                <td>
+                    <%= i %>
+                </td>
+                <td>
+                    <%= i.item_name %>
+                </td>
+                <td>
+                    <%= i %>
+                </td>
+        </tr>
+    </tbody>
+</table>
